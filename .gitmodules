@@ -1,6 +1,0 @@
-[submodule "slime"]
-	path = slime
-	url = ./slime
-[submodule "atom-one-dark-theme"]
-	path = atom-one-dark-theme
-	url = ./atom-one-dark-theme/
