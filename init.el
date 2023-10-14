@@ -1,16 +1,23 @@
 (add-to-list 'load-path "~/.emacs.d/slime")
-(require 'slime-autoloads)
-;(load (expand-file-name "~/.quicklisp/slime-helper.el"))
-  ;; Replace "sbcl" with the path to your implementation
+(add-to-list 'load-path "~/.emacs.d/neotree")
 
+(require 'slime-autoloads)
+(require 'neotree)
+
+; SBCL will be selected by slime
 (setq inferior-lisp-program "sbcl")
 (setq slime-contribs '(slime-fancy slime-asdf slime-editing-commands))
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/atom-one-dark-theme")
-
+; Add some themes to the theme load path
+(add-to-list 'custom-theme-load-path
+	     "~/.emacs.d/atom-one-dark-theme"
+	     "~/.emacs.d/atom-one-light-theme")
+; Selected theme on load
 (load-theme 'atom-one-dark t)
 
-;(with-eval-after-load "lisp" (slime))
+; Add a key to enable neotree
+(global-set-key [f8] 'neotree-toggle)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

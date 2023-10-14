@@ -4,3 +4,9 @@
 [submodule "slime"]
 	path = slime
 	url = https://github.com/slime/slime.git
+[submodule "atom-one-light-theme"]
+	path = atom-one-light-theme
+	url = https://github.com/jonathanchu/atom-one-light-theme.git
+[submodule "neotree"]
+	path = neotree
+	url = https://github.com/jaypei/emacs-neotree.git
