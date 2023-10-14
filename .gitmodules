@@ -1,0 +1,6 @@
+[submodule "atom-one-dark-theme"]
+	path = atom-one-dark-theme
+	url = https://github.com/jonathanchu/atom-one-dark-theme.git
+[submodule "slime"]
+	path = slime
+	url = https://github.com/slime/slime.git
