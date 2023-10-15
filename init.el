@@ -1,8 +1,11 @@
 (add-to-list 'load-path "~/.emacs.d/slime")
 (add-to-list 'load-path "~/.emacs.d/neotree")
+(add-to-list 'load-path "~/.emacs.d/all-the-icons")
 
 (require 'slime-autoloads)
 (require 'neotree)
+(when (display-graphic-p) ; Special require for all the icons
+  (require 'all-the-icons))
 
 ; SBCL will be selected by slime
 (setq inferior-lisp-program "sbcl")
@@ -17,6 +20,9 @@
 
 ; Add a key to enable neotree
 (global-set-key [f8] 'neotree-toggle)
+
+					; Show arrows instead of +/- for directory
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

@@ -10,3 +10,6 @@
 [submodule "neotree"]
 	path = neotree
 	url = https://github.com/jaypei/emacs-neotree.git
+[submodule "all-the-icons"]
+	path = all-the-icons
+	url = https://github.com/domtronn/all-the-icons.el.git
